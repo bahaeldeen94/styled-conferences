@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+}
+.container {
+  margin: 0 auto !important;
+  width: 960px;
+}
+/*start header*/
+.header {
+  background: #293f50;
+  padding-bottom: 40px;
+}
+
+.head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #fff;
+  width: 100%;
+  margin: 0;
+}
+
+.head .title h1 {
+  padding-top: 10px;
+  border-top: 4px solid #648880;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 2.2em;
+  width: 75%;
+  margin: 0;
+}
+
+.head .title:hover h1 {
+  color: #648880;
+  cursor: pointer;
+  border-top: 4px solid #fff;
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+}
+.head .menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.head .menu .date {
+  text-transform: capitalize;
+  color: #648880;
+  margin-bottom: 15px;
+}
+.head .menu ul,
+.footer .container .nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  text-transform: uppercase;
+}
+.head .menu ul li,
+.footer .container .nav ul li {
+  padding: 5px 0 5px 18px;
+}
+.head .menu ul li a,
+.footer .container .nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.75em;
+}
+.head .menu ul li a:hover,
+.footer .container .nav ul li a:hover {
+  color: #648880;
+}
+/*end header*/
+
+/* start  description */
+.description {
+  background: linear-gradient(to right, #a1d3b0, #f6f1d3);
+}
+.description .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 30px 0;
+}
+.description .container h1 {
+  text-transform: capitalize;
+  color: #648880;
+  font-weight: 300;
+}
+.description .container p {
+  color: #888;
+  font-weight: 300;
+  line-height: 180%;
+  text-transform: capitalize;
+}
+/* end description */
+
+/*srart footer*/
+.footer {
+  background-color: #293f50;
+  padding: 40px 0;
+  display: flex;
+}
+.footer .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 0.6em !important;
+}
+.footer .container .copy {
+  display: flex;
+  align-items: center;
+  font-size: 0.8em;
+  color: #fff;
+}
+.footer .container .copy span {
+  padding-right: 5px;
+}
+/*end footer*/
